@@ -1,5 +1,11 @@
 package com.bae.persistence.repository;
 
-public class AccountRepository {
+public interface AccountRepository {
+	String getAllAccounts();
 
+	String createAccount(String account);
+
+	String deleteAccount(int accountNumber);
+
+	String updateAccount(int accountNumber, String account);
 }
